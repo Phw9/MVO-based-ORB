@@ -40,14 +40,6 @@ cv::Mat img;
 int imageCurNum = 0;
 int realFrame = 0;
 
-mvo::Feature_KLT detector;
-mvo::Feature_KLT trackerA, trackerB;
-std::vector<mvo::Feature_KLT> localTrackPointsA;
-int lTPA = 0;
-std::vector<mvo::Feature_KLT> localTrackPointsB;
-int lTPB = 0;
-
-std::vector<uchar> stats;
 
 mvo::StrctureFromMotion getEssential;
 mvo::PoseEstimation getPose;
